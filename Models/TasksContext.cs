@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Threading.Tasks;
 
 namespace todoWebApi.Models
@@ -9,8 +10,8 @@ namespace todoWebApi.Models
             : base(options)
         { }
 
-        public DbSet<Task> taskslist { get; set; }
+        public DbSet<Tasks> tasks { get; set; }
 
-
+   
     }
 }
